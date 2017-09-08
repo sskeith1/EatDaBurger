@@ -1,8 +1,4 @@
-INSERT INTO burgers (burger_name) VALUES ("The Classic");
-INSERT INTO burgers (burger_name) VALUES ("The Dragon");
-INSERT INTO burgers (burger_name) VALUES ("The 911");
-
-
--- INSERT INTO burgers (devoured) VALUES ("y");
--- INSERT INTO burgers (devoured) VALUES ("n");
--- INSERT INTO burgers (devoured) VALUES ("y");
+INSERT INTO burgers (burger_name, devoured) VALUES ("Enter the Dragon", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Boogie Burger", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("The Skank", true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("The Long Night", true);
