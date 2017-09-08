@@ -27,13 +27,18 @@
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h2 class="panel-title"><strong>Eaten</strong></h2>
+							<ul class="list-group eaten">
 							{{#each burgers}}
 								{{#if this.devoured}}
-									<div class="burgerEaten">
-										<div>{{this.burger_name}}</div>
-									</div>
+									<li class="burgerEaten">	
+										<form action = "/delete/{{this.burger_name}}" method="POST">
+											<button class="eaten" type="submit">Delete {{this.burger_name}}			
+											</button>
+										</form>
+									</li>
 								{{/if}}
 							{{/each}}
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -50,7 +55,7 @@
 				<div class="col-lg-12">
 					<form action="/burgers" method="POST">
 						<input type="text" id="name" name="burger_name" placeholder="omnomnomnomnomnomnomnom">
-						<button type="submit" class="addBurgerButton">Add The Burger</button>
+						<button type="submit" class="addBurgerButton">Burger!</button>
 					</form>
 				</div>
 			</div>
